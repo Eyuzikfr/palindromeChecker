@@ -139,7 +139,7 @@ form {
 @media only screen and (max-width: 500px)
 {
     form {
-        height: 49vh;
+        height: 65vh;
     }
 
     .form-text {
