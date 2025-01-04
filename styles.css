@@ -136,14 +136,14 @@ form {
     color: var(--accent-color);
 }
 
-@media only screen and (max-width: 500px)
+@media only screen and (max-width: 600px)
 {
     form {
-        height: 65vh;
+        height: 80vh;
     }
 
     .form-text {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     #text-input {
