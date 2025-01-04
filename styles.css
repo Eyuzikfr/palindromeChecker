@@ -46,13 +46,14 @@ form {
     width: 70vw;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     margin: auto;
     margin-top: 100px;
     border-bottom: 10px solid var(--accent-color);
     border-right: 10px solid var(--accent-color);
     padding-bottom: 30px;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 100px;
 }
 
 .form-text {
@@ -136,7 +137,7 @@ form {
     color: var(--accent-color);
 }
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 500px)
 {
     form {
         height: 80vh;
@@ -154,3 +155,8 @@ form {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .form-text {
+        font-size: 20px;
+    }
+}
