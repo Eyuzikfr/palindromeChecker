@@ -41,8 +41,9 @@ header {
 }
 
 form {
+    max-height: 100vh;
     background-color: var(--background-color2);
-    height: 70vh;
+    height: 80vh;
     width: 70vw;
     display: flex;
     flex-direction: column;
@@ -86,7 +87,9 @@ form {
 }
 
 #check-btn {
-    display: block;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     margin: auto;
     margin-top: 20px;
     height: 50px;
@@ -101,8 +104,21 @@ form {
     cursor: pointer;
     border: 2px solid var(--accent-color);
     text-shadow: 1px 1px 10px black;
+
+    box-shadow: none;
+    transform: scale(1);
+    transition: box-shadow 0.2s ease, color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
+#check-btn:hover {
+    box-shadow: 7px 7px 6px var(--accent-color2);
+    color: white;
+    transform: scale(1.05);
+}
+
+#check-btn:active {
+    transform: scale(1);
+}
 #result {
     display: none;
     font-family: 'Coolvetica', sans-serif;
@@ -113,9 +129,10 @@ form {
     font-weight: bold;
     margin-top: 20px;
     background-color: var(--background-color1);
-    border-radius: 10px;
     width: 70%;
-    border: 2px solid var(--accent-color);
+    border-bottom: 5px solid var(--accent-color);
+    border-right: 5px solid var(--accent-color);
+    border-radius: 10px;
 }
 
 #footer {
@@ -141,6 +158,7 @@ form {
 {
     form {
         height: 80vh;
+        max-height: 100vh;
     }
 
     .form-text {
@@ -155,7 +173,11 @@ form {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
+    form {
+        max-height: 100vh;
+    }
+
     .form-text {
         font-size: 20px;
     }
